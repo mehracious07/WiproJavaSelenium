@@ -4,7 +4,10 @@ public class Local_variable {
 		int a=4;
 		int b=6;
 		int c=a+b;
+	
 		System.out.println(c);
+		System.out.println("Hello");
+		
 	}
 	
 	public void  add1() {
