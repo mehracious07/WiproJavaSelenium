@@ -1,4 +1,3 @@
-
 public class Local_variable {
 
 	public void  add() {
