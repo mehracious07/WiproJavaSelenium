@@ -1,0 +1,24 @@
+package July25;
+final class A{
+	
+}
+class B /*extends A*/{
+	final int a=10;
+//	a=20; fnal keyword cannot be modified
+	final void method() {
+		System.out.println("Hello");
+	}
+}
+
+public class Final extends B{
+	@Override 
+//	public void method() {
+//		System.out.println("Hello Boys");  //Cannot overide final method
+//	}
+int a=20;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

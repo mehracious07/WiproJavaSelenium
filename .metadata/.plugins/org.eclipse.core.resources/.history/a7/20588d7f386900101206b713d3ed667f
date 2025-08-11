@@ -1,0 +1,32 @@
+package July25;
+
+class Employee{
+	private String name;
+	private int age ;
+	private float salary=0.0f;
+	
+	public void setData(String name,int age,float salary) {
+		this.name=name;
+		if(salary>0) {
+			this.salary=salary;
+		}else {
+			this.salary=0;
+		}
+		this.age=age;
+	}
+	
+	public void getData() {
+		System.out.println("The name of the Employee is "+name+" he is "+age+" years old ");
+		System.out.println("His Salary is :"+salary);
+	}
+}
+public class EMP {
+
+	public static void main(String[] args) {
+		Employee e1= new Employee();
+		Employee e2= new Employee();
+		Employee e3= new Employee();
+
+	}
+
+}

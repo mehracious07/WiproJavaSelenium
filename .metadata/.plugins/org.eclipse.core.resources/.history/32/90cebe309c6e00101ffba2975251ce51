@@ -1,0 +1,35 @@
+package IO_CharStream;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.Buffer;
+
+public class fileWriter_Reader_eg {
+
+	public static void main(String[] args) {
+		try {
+			FileWriter f=new FileWriter("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\IO_CharStream\\Sample2");
+			BufferedWriter bw=new BufferedWriter(f);
+			bw.write("Sanjay Singh Mehara");
+			bw.write(" I am 22 years old");
+			bw.close();
+			
+			FileReader f1=new FileReader("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\IO_CharStream\\Sample2");
+			@SuppressWarnings("resource")
+			BufferedReader r=new BufferedReader(f1);
+			String data= r.readLine();
+			while(data!=null) {
+				System.out.print(data);
+				data=r.readLine();
+			}
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+
+	}
+
+}

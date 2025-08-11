@@ -1,0 +1,16 @@
+package July30_Package;
+
+import java.util.ArrayList;
+
+public class Collections_ArrayList {
+
+	public static void main(String[] args) {
+		ArrayList<String>al=new ArrayList<>();
+		al.add("Sanjay");
+		al.add("Rajat");
+		al.add("Sachin");
+		al.add("Nitin");
+		al.add("Mayank");
+	}
+
+}

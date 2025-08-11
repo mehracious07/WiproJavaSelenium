@@ -1,0 +1,25 @@
+package LabSession01;
+
+import java.io.File;
+
+//		1.Write a Java program to get a list of all file/directory names in the given directory.
+
+public class Question1 {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		 
+String path ="C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src";
+File f=new File(path);
+String[]file=f.list();
+
+if(file==null && file.length==0) {
+	System.out.println("The directory is empty.");
+}else {
+	for(String name:file) {
+		System.out.println(name);
+	}
+}
+	}
+
+}

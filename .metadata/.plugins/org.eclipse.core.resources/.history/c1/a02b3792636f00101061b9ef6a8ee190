@@ -1,0 +1,45 @@
+package LabSession02082025;
+
+import java.util.Scanner;
+
+class Even extends Thread{
+	int start;
+	int end;
+	public Even(int start, int end) {
+		this.start=start;
+	}
+	public void run() {
+		for(int i=start;i<=end;i++) {
+			if(i%2==0) {
+				System.out.print(i+" ");
+			}
+		}
+	}
+}
+class Odd extends Thread{
+	int start;
+	int end;
+	public Odd(int start, int end) {
+		this.start=start;
+	}
+	public void run() {
+		for(int i=start;i<=end;i++) {
+			if(i%2==0) {
+				System.out.print(i+" ");
+			}
+		}
+	}
+}
+public class EvenOrOdd {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter the range :");
+		System.out.println("From: ");
+		int start=sc.nextInt();
+		System.out.println("To: ");
+		int end=sc.nextInt();
+Even e =new Even(start,end);
+	}
+
+}

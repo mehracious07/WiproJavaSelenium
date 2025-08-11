@@ -1,0 +1,27 @@
+package Labsession30July;
+
+import java.util.HashSet;
+import java.util.Set;
+
+//Create a set  and  find Duplicate Elements in set
+public class Ques2 {
+
+	public static void main(String[] args) {
+		int arr[]= {10,20,30,40,10};
+
+        Set<Integer> uniqueSet = new HashSet<>();
+        Set<Integer> duplicates = new HashSet<>();
+		
+		for(int i:arr) {
+			if(!uniqueSet.add(i)) {
+				duplicates.add(i);
+			}
+		}
+		
+		for(int d:duplicates) {
+			System.out.print("Duplicates are as follows :"+d);
+		}
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package IO_CharStream;
+
+import java.io.CharArrayWriter;
+import java.io.IOException;
+
+public class CharArrayWriter_reader {
+
+	public static void main(String[] args) {
+		CharArrayWriter ch = new CharArrayWriter();
+try {
+	ch.write("Hello boys");
+	ch.write("I am Sanjay singh Mehara");
+	String s = ch.toString();
+	System.out.println(s);
+} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+	}
+
+}

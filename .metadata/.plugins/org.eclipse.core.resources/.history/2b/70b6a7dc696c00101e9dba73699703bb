@@ -1,0 +1,49 @@
+package JDBC_Rev;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class CRUD {
+	private static final String url="jdbc:mysql://localhost:3306/companydb";
+	private static final String user_name="root";
+	private static final String pass="sanjaymehra@123";
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+		//load Driver
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection cn = DriverManager.getConnection(url,user_name,pass);
+		System.out.println("Connection established");
+		
+		
+//		String createQuery = "CREATE TABLE IF NOT EXISTS employees (" +
+//                "id INT PRIMARY KEY, " +
+//                "name VARCHAR(50), " +
+//                "department VARCHAR(50), " +
+//                "salary DOUBLE)";
+//		
+//		PreparedStatement st = cn.prepareStatement(createQuery);
+//		st.executeUpdate();
+//		System.out.println("The table is created ");
+		
+		String insertQuery="INSERT INTO Employees(id,name,department,salary) VALUES (?,?,?,?) ";
+		PreparedStatement st1=cn.prepareStatement(insertQuery);
+		
+		st1.setInt(1, 101);
+		st1.setString(2, "Alice");
+		st1.setString(3, "HR");
+		st1.setInt(4, 50000);
+		
+		int rowsAffected=st1.executeUpdate();
+		System.out.println(rowsAffected+" number of rows affected. ");
+		
+		
+		
+		
+
+	}
+
+}

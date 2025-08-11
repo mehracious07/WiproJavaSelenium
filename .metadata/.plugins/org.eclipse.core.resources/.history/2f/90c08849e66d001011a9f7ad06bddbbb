@@ -1,0 +1,33 @@
+package July31;
+
+import java.util.*;
+
+class Emp{
+    String name;
+    int Salary;
+    Emp( String name,int Salary){
+        this.name=name;
+        this.Salary=Salary;
+    }
+}
+
+class Comparesalary implements Comparator<Emp>{
+    public int compare(Emp e1,Emp e2){
+        return e2.Salary-e1.Salary;
+    }
+}
+public class Salary_Comparator {
+    public static void main(String[]args){  
+List<Emp>l=new ArrayList<>();
+l.add(new Emp("Sanjay",22000));
+l.add(new Emp("Aman",21000));
+l.add(new Emp("Nitin",30000));
+
+Collections.sort(l,new Comparesalary());
+
+for(Emp e: l){
+    System.out.println(e.name +"->"+e.Salary);
+}
+
+    }
+}

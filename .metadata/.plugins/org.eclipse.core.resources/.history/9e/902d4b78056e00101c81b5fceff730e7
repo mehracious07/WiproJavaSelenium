@@ -1,0 +1,15 @@
+package LabSession31July;
+
+public class Question3 {
+
+	public static void main(String[] args) {
+		int[]arr= {1,2,3,4,4,3,2,1,5};
+		int result=0;
+		for(int i:arr) {
+			result^=i;
+		}
+		System.out.print(result);
+
+	}
+
+}

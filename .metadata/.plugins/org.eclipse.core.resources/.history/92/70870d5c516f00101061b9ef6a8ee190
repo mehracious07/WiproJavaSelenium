@@ -1,0 +1,10 @@
+package Thread_concept;
+
+public class Thread_Class1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

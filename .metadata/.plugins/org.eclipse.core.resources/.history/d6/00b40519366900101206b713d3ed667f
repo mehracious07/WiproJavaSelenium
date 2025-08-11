@@ -1,0 +1,23 @@
+package July25;
+class Parent {
+	private String name;
+	private int age;
+	
+	public void setData(String name,int age) {
+		this.name=name;
+		this.age=age;
+	}
+	public void getData() {
+	System.out.println("The name of the student is "+ name +" whose age is"+age);
+	}
+}
+
+public class Encapsulation {
+
+	public static void main(String[] args) {
+		Parent a =new Parent();
+		a.setData("Sanjay", 22);
+a.getData();
+	}
+
+}

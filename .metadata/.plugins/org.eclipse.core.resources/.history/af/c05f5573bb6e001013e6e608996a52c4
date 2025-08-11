@@ -1,0 +1,14 @@
+package LabSession01;
+//Read back the list of students from the file and display it.
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Question4 {
+
+	public static void main(String[] args) throws IOException {
+		FileWriter fw=new FileWriter("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\LabSession01\\Sample");
+
+	}
+
+}

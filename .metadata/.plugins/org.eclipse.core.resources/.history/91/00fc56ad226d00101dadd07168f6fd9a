@@ -1,0 +1,27 @@
+package July30_Package;
+
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class Set_s {
+
+	public static void main(String[] args) {
+//	HashSet<Integer> h=new HashSet<>();
+	TreeSet<Integer> h=new TreeSet<>();
+	h.add(4);
+	h.add(2);
+	h.add(3);
+	h.add(1);
+	System.out.println(h+" ");
+	System.out.println(h.contains(4));
+	System.out.println(h.isEmpty());
+	h.remove(2);
+	System.out.println(h+" ");
+	h.add(4);
+	System.out.println(h+" ");
+	System.out.print(h.add(null));
+	System.out.print(h+" ");
+
+	}
+
+}

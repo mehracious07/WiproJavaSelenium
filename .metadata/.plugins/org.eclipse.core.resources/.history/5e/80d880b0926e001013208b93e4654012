@@ -1,0 +1,21 @@
+package IO;
+
+import java.io.FileOutputStream;
+
+public class FileOutputExample {
+
+	public static void main(String[] args) {
+		try {
+			String s=" I am in java Class";
+			FileOutputStream o= new FileOutputStream("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\IO\\SamleFile",true);
+			byte[]array=s.getBytes();
+			o.write(array);
+			o.close();
+		}
+		catch(Exception e) {
+			e.getStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package July25;
+class BookTracker{
+	private String title;
+	private String author; 
+	private String isbn;
+	private boolean isAvailable=true;
+	
+	  public void SetBookInfo(String title, String author, String isbn) {
+	        this.title = title;
+	        this.author = author;
+	        this.isbn = isbn; 
+	    }
+	
+	public void IssueBook() {
+		if(isAvailable) {
+			isAvailable=false;
+			System.out.println("Book "+this.title+ " by"+this.author+" having isbn no"+this.isbn+" is available ready to be issued");
+		}else {
+			System.out.println("Book is not available can't be issued");
+		}
+		
+}
+
+public void ReturnBook() {
+	if(!isAvailable) {
+		isAvailable=true;
+		System.out.println("Book "+this.title+ " by"+this.author+" having isbn no"+this.isbn+" is returned");
+	}else {
+		System.out.println("Book is never issued");
+	}
+
+}
+
+public class Library {
+
+	public static void main(String[] args) {
+		BookTracker b = new BookTracker();
+		b.SetBookInfo("C++","Addison Wisely","0275967301");
+		b.IssueBook();
+		b.ReturnBook();
+	}
+
+}

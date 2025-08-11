@@ -1,0 +1,19 @@
+package August02;
+class A extends Thread{
+	int count=0;
+	public void inc() {
+		for(int i=0;i<=1000;i++) {
+			count++;
+			
+		}
+	}
+}
+public class Sync {
+
+	public static void main(String[] args) {
+		A a1=new A();
+		A a2=new A();
+
+	}
+
+}

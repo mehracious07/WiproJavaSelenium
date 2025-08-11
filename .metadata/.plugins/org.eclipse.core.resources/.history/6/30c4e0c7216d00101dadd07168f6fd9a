@@ -1,0 +1,19 @@
+package July30_Package;
+
+import java.util.HashSet;
+
+public class Set_s {
+
+	public static void main(String[] args) {
+	HashSet<Integer> h=new HashSet<>();
+	h.add(4);
+	h.add(2);
+	h.add(3);
+	h.add(1);
+	System.out.print(h+" ");
+	System.out.print(h.contains(4));
+	
+
+	}
+
+}

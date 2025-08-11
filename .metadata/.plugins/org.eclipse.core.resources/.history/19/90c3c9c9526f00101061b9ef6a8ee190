@@ -1,0 +1,12 @@
+package August02;
+
+public class Wrapper {
+
+	public static void main(String[] args) {
+		int a=50;
+//		Integer A=Integer.valueOf(a);
+		Integer A =a;
+
+	}
+
+}

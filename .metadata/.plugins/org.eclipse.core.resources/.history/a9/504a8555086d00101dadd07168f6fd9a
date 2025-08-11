@@ -1,0 +1,40 @@
+package July30_Package;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
+public class De_Queue {
+
+	public static void main(String[] args) {
+	
+		Deque<String>dq=new LinkedList<>();
+		
+		dq.add("Sanjay");
+		dq.add("Nitin");
+		dq.add("Rajat");
+		dq.add("Vansh");
+		
+		
+		System.out.println(dq);
+		dq.addFirst("Mayank");
+		System.out.println(dq);
+		dq.addLast("Lokesh");
+		System.out.println(dq);
+		dq.removeFirst();
+		System.out.println(dq);
+		dq.removeLast();
+		System.out.println(dq);
+		System.out.println(dq.getFirst());
+		System.out.println(dq.getLast());
+		dq.remove("Nitin");
+		System.out.println(dq);
+		dq.add(null); //You Cannot insert null in Deque if u are using arrayDeque
+		System.out.println(dq);
+//		for(String s : dq) {
+//			System.out.print(s+" ");
+//		}
+		
+
+	}
+
+}

@@ -1,0 +1,52 @@
+package July30_Package;
+
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class Set_s {
+
+	public static void main(String[] args) {
+	HashSet<String> h1=new HashSet<>();
+//	TreeSet<Integer> h2=new TreeSet<>();
+	
+	h1.add("Ball");
+	h1.add("Cat");
+	h1.add("Egg");
+	h1.add("Apple");
+	System.out.println(h1+" ");
+	System.out.println(h1.contains("Apple"));
+	System.out.println(h1.isEmpty());
+	h1.remove("Ball");
+	System.out.println(h1+" ");
+	h1.add("Book");
+	System.out.println(h1+" ");
+	System.out.print(h1.add(null));
+	System.out.print(h1.add(null));
+	System.out.print(h1+" ");
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	h2.add(4);
+//	h2.add(2);
+//	h2.add(3);
+//	h2.add(1);
+//	System.out.println(h2+" ");
+//	System.out.println(h2.contains(4));
+//	System.out.println(h2.isEmpty());
+//	h2.remove(2);
+//	System.out.println(h2+" ");
+//	h2.add(4);
+//	System.out.println(h2+" ");
+//	System.out.print(h2.add(null));
+//	System.out.print(h2+" ");
+
+	}
+
+}

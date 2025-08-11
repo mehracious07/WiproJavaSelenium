@@ -1,0 +1,24 @@
+package July30_Package;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Qu_eue {
+
+	public static void main(String[] args) {
+		Queue<String>q=new LinkedList<>();
+		q.add("Mango");
+		q.add("banana");
+		q.add("Grappes");
+		q.add("Oranges");
+		
+		 System.out.println(q);
+		 System.out.println(q.peek());
+		 System.out.println(q);
+		 System.out.println(q.poll());
+		 q.remove("banana");
+		 System.out.println(q);
+
+	}
+
+}

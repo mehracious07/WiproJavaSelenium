@@ -1,0 +1,42 @@
+package Thread_concept;
+//Threads in java allow multiple parts of a program to run concurrently.
+class A extends Thread{
+	public void run() {
+		for(int i =0;i<=100;i++) {
+			System.out.println("Hello A");
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			};
+		}
+	}
+}
+class B extends Thread{
+	public void run() {
+		for(int i =0;i<=100;i++) {
+			System.out.println("Hello this is B");
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			};
+		}
+	}
+}
+public class Thread_Class1 {
+
+	public static void main(String[] args) {
+		
+		A obj1=new A();
+		B obj2=new B();
+		
+		obj1.start();
+		obj1.setPriority(10);
+		obj2.start();
+
+	}
+
+}

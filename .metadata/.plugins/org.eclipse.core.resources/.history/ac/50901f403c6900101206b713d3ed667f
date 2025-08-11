@@ -1,0 +1,41 @@
+package July25;
+class BookTracker{
+	private String title;
+	private String author; 
+	private String isbn;
+	private boolean isAvailable=true;
+	
+	public void IssueBook(String title,String author,String isbn) {
+		if(isAvailable) {
+			isAvailable=false;
+			System.out.println("Book is available ready to be issued");
+		}else {
+			System.out.println("Book is not available can't be issued");
+		}
+		this.title=title;
+		this.author=author;
+		this.isbn=isbn;
+	}
+}
+
+public void ReturnBook(String title,String author,String isbn) {
+	if(!isAvailable) {
+		isAvailable=true;
+		System.out.println("Book is returned");
+	}else {
+		System.out.println("Book is never issued");
+	}
+	this.title=title;
+	this.author=author;
+	this.isbn=isbn;
+}
+}
+
+public class Library {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

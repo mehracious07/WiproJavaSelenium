@@ -1,0 +1,27 @@
+package August02;
+class A extends Thread{
+	int count=0;
+	public int inc() {
+		for(int i=0;i<=1000;i++) {
+			count++;
+			
+		}
+		return count;
+	}
+}
+public class Sync {
+
+	public static void main(String[] args) throws InterruptedException {
+		A a1=new A();
+		A a2=new A();
+
+		a1.start();
+		a2.start();
+		
+		a1.join();
+		a2.join();
+		
+		System.out.println(a1.count+a2.count);
+	}
+
+}

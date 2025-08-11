@@ -1,0 +1,15 @@
+package August02;
+class A{
+	int count=0;
+	public void inc() {
+		count++;
+	}
+}
+public class Sync {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

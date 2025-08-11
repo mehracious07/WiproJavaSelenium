@@ -1,0 +1,39 @@
+package Serilization_Deserilization;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class Serialization {
+
+	public static void main(String[] args) {
+		Student s1=new Student("Sanjay",22);
+		
+		//Serialization
+try {
+	FileOutputStream f=new FileOutputStream("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\Serilization_Deserilization\\Se_Desrilization");
+    ObjectOutputStream out =new  ObjectOutputStream(f);
+    out.writeObject(s1);
+    f.close();
+    System.out.print("Object Serialized");
+}catch(Exception e) {
+	e.printStackTrace();
+}
+////Deserialization
+
+try {
+	FileInputStream f=new FileInputStream("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\Serilization_Deserilization\\Se_Desrilization");
+    ObjectInputStream in =new  ObjectInputStream(f);
+    Student s2=(Student)in.readObject();
+    in.close();
+    f.close();
+    System.out.print(" Object Deserialized");
+}catch(Exception e) {
+	e.printStackTrace();
+}
+	
+	
+	}
+
+}

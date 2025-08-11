@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class ReadingFromTheKeyboard {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the user id:");
+		int a;
+		
+		while(true) {
+			if(sc.hasNextInt()) {
+				 a = sc.nextInt();
+				break;
+			}else {
+				System.out.println("Enter a valid id");
+				sc.next();
+			}
+		}
+		System.out.println(" The user id is :"+a);
+		sc.close();
+
+	}
+
+}

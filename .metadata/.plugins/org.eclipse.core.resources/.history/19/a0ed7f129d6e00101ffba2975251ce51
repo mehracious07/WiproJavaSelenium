@@ -1,0 +1,29 @@
+package IO_CharStream;
+
+import java.io.CharArrayWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CharArrayWriter_reader {
+
+	public static void main(String[] args) {
+try {
+	CharArrayWriter ch = new CharArrayWriter();
+	ch.write("Hello boys");
+	ch.write(" I am Sanjay singh Mehara");
+	
+//	String s = ch.toString();
+//	System.out.println(s);
+	
+	FileWriter fw=new FileWriter("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\IO_CharStream\\CharArrayWriter_Reader");
+	ch.writeTo(fw);
+	fw.close();
+	ch.close();
+	
+} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+	}
+
+}

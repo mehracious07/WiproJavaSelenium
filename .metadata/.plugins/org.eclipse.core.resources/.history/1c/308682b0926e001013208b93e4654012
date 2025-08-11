@@ -1,0 +1,24 @@
+package IO;
+
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+
+public class FilterOutPutStream_eg {
+
+	public static void main(String[] args) {
+		try {
+		String s=" I am 22 years old";
+		FileOutputStream file = new FileOutputStream("C:\\Users\\my pc\\eclipse-workspaceWipro\\SDET_WIPRO\\src\\IO\\SamleFile",true);
+		BufferedOutputStream bf=new BufferedOutputStream(file);
+//		byte[]arr=s.getBytes();
+		bf.write(s.getBytes());
+		bf.close();
+		}
+		catch(Exception e) 
+		{
+			e.getStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package August02;
+
+public class Class2 {
+
+	public static void main(String[] args) {
+		  System.out.println("Starting thread from class2...");
+		A object=new A();
+
+	}
+
+}

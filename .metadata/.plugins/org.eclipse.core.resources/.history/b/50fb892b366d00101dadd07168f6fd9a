@@ -1,0 +1,18 @@
+package Labsession30July;
+
+import java.util.LinkedList;
+
+public class Question5 {
+
+	public static void main(String[] args) {
+		LinkedList<Integer>l1=new LinkedList<>();
+		LinkedList<Integer>l2=new LinkedList<>();
+		int i=l1.size();
+		int j=l2.size();
+		while(l1.size()>0 ) {
+			
+		}
+
+	}
+
+}
