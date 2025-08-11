@@ -1,0 +1,28 @@
+package July31;
+
+import java.util.HashMap;
+import java.util.Map;
+public class program{
+     public static void main(String[] args) {
+        
+Map<Integer,String>m=new HashMap<>();
+m.put(1,"Sanjay");
+m.put(2,"Sanjay");
+m.put(3,"Harshit");
+m.put(4,"Nitin");
+m.put( null,"Mayank");
+m.put( null,"Keshav");
+System.out.println(m.get(4));
+System.out.println(m);
+
+// for(Map.Entry<Integer,String>e:m.entrySet()){
+// System.out.println(e.getKey() +"-> "+  e.getValue());
+// }
+
+
+m.forEach((key,value)->{
+    System.out.println(key+"->"+value);
+});
+
+    }
+}

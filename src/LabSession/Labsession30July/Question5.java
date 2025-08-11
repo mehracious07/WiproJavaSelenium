@@ -1,0 +1,37 @@
+package Labsession30July;
+
+import java.util.LinkedList;
+
+public class Question5 {
+
+	public static void main(String[] args) {
+		LinkedList<Integer>l1=new LinkedList<>();
+		LinkedList<Integer>l2=new LinkedList<>();
+		l1.add(1);
+		l1.add(2);
+		l1.add(3);
+		l1.add(4);
+		
+		l2.add(2);
+		l2.add(2);
+		l2.add(3);
+		l2.add(4);
+		
+		int size1=l1.size();
+		int size2=l2.size();
+	
+		if(size1!=size2) {
+			System.out.print("lists are not equal");
+		}
+		
+		for(int i=0;i<size1;i++) {
+			if(l1.get(i)!=l2.get(i)) {
+				System.out.print("lists are not equal");
+				return;
+			}
+		}
+		System.out.print("lists is equal");
+
+	}
+
+}

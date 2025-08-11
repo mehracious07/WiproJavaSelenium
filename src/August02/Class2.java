@@ -1,0 +1,17 @@
+package August02;
+
+public class Class2 {
+
+	public static void main(String[] args) {
+		  System.out.println("Starting thread from class2...");
+		Thread o1=new Chef("MOMO");
+		Thread o2=new Chef("Dosa");
+		Thread o3=new Chef("Idli");
+		
+		o1.start();
+		o2.start();
+		o3.start();
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package July25;
+
+public class Temprature {
+    private double celsius;
+
+    public void setCelsius(double celsius) {
+      if(celsius<0) {
+    	  System.out.println("Very cold !! tep cannot be below then 0");
+      }else {
+    	  this.celsius=celsius;
+      }
+    }
+
+    
+    public double getCelsius() {
+        return celsius;
+    }
+
+
+    public double toFahrenheit() {
+        return (celsius * 9/5) + 32;
+    }
+
+
+    public double toKelvin() {
+        return celsius + 273.15;
+    }
+
+	public static void main(String[] args) {
+	Temprature t = new Temprature();
+	t.setCelsius(12);
+	System.out.println("Celsius: "+t.getCelsius());
+	System.out.println("Farenheit: "+t. toFahrenheit());
+	System.out.println("Kelvin: "+t.toKelvin());
+	}
+
+}
