@@ -7,6 +7,7 @@ public class Local_variable {
 		int c=a+b;
 	
 		System.out.println(c);
+		System.out.println("Hello");
 		
 	}
 	
